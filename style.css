@@ -1,20 +1,33 @@
 .top-1{
-
+    margin:3% 0;
+    position:relative;
+    height:50px;
 }
 .home{
     display:inline-block;
+    position:absolute;
+    left:5%;
 }
 .about{
     display:inline-block;
+    position:absolute;
+    left:15%;
 }
 .slideline{
     display:inline-block;
+    position:absolute;
+    width:50%;
+    left:25%;
 }
 .login{
     display:inline-block;
+    position:absolute;
+    right:15%;
 }
 .subscribe{
     display:inline-block;
+    position:absolute;
+    right:5%;
 }
 .top-2{
 
