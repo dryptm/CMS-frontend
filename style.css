@@ -1,5 +1,5 @@
 .top-1{
-    margin:20px 0;
+    margin:0;
     position:relative;
     height:50px;
 }
@@ -7,44 +7,50 @@
     display:inline-block;
     position:absolute;
     left:5%;
-    margin:2% 0%;
+    margin:16px;
 }
 .about{
     display:inline-block;
     position:absolute;
     left:15%;
-    margin:2% 0%;
+    margin:16px;
 }
 .slideline{
     display:inline-block;
     position:absolute;
     width:50%;
     left:25%;
-    margin:2% 0%;
+    margin:16px;
 }
 .login{
     display:inline-block;
     position:absolute;
     right:15%;
-    margin:2% 0%;
+    margin:16px;
 }
 .subscribe{
     display:inline-block;
     position:absolute;
     right:5%;
-    margin:2% 0%;
+    margin:16px;
 }
 .top-2{
+    margin:0;
+    position:relative;
+    height:100px;
 
 }
 .logo{
     display:inline-block;
+    margin:16px;
 }
 .search{
     display:inline-block;
+    margin:16px;
 }
 .applink{
     display:inline-block;
+    margin:16px;
 }
 .categories{
     
