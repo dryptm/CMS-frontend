@@ -1,5 +1,5 @@
 .top-1{
-    margin:3% 0;
+    margin:20px 0;
     position:relative;
     height:50px;
 }
@@ -7,27 +7,32 @@
     display:inline-block;
     position:absolute;
     left:5%;
+    margin:2% 0%;
 }
 .about{
     display:inline-block;
     position:absolute;
     left:15%;
+    margin:2% 0%;
 }
 .slideline{
     display:inline-block;
     position:absolute;
     width:50%;
     left:25%;
+    margin:2% 0%;
 }
 .login{
     display:inline-block;
     position:absolute;
     right:15%;
+    margin:2% 0%;
 }
 .subscribe{
     display:inline-block;
     position:absolute;
     right:5%;
+    margin:2% 0%;
 }
 .top-2{
 
@@ -43,7 +48,16 @@
 }
 .categories{
     
+    height:50px;
+    width:100%;
+    
 }
 .category{
     display:inline-block;
+    position:initial;
+    margin:16px 3% 0% 3%;
+
+}
+body{
+    margin:0;
 }
