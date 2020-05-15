@@ -1,11 +1,36 @@
-img{
-    height:50px;
-    margin:10px;
-    display:inline-block;
+.top-1{
 
 }
-h1{
+.home{
     display:inline-block;
-    margin:0;
+}
+.about{
+    display:inline-block;
+}
+.slideline{
+    display:inline-block;
+}
+.login{
+    display:inline-block;
+}
+.subscribe{
+    display:inline-block;
+}
+.top-2{
 
+}
+.logo{
+    display:inline-block;
+}
+.search{
+    display:inline-block;
+}
+.applink{
+    display:inline-block;
+}
+.categories{
+    
+}
+.category{
+    display:inline-block;
 }
