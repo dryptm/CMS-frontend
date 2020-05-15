@@ -38,15 +38,22 @@
     margin:0;
     position:relative;
     height:100px;
+    background-color:#23384E;
 
 }
 .logo{
     display:inline-block;
-    margin:16px;
+    margin:11px;
+    position:absolute; 
+    height:80px;width:100px;
+    margin-left:100px;
 }
 .search{
     display:inline-block;
     margin:16px;
+}
+.searchbtn{
+    height:30px;
 }
 .applink{
     display:inline-block;
