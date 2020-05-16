@@ -59,8 +59,9 @@
 .logo{
     display:inline-block;
     margin:0;
-    position:absolute; 
-    height:110px;
+    position:absolute;
+    top:24%; 
+    height:55px;
     margin-left:100px;
 }
 .search{
@@ -251,11 +252,11 @@
 }
 .categories{
     background-color:#eee;
-    
-    border-width:10px;
+    border:#bebdbd;
+    border-width: 1px;
+    border-style:solid;
     height:50px;
     width:100%;
-    
 }
 .cat-2{
     margin-left: 60px;
