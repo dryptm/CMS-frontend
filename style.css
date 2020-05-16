@@ -2,24 +2,30 @@
     margin:0;
     position:relative;
     height:50px;
+    background-color:#23384E;
 }
 .home{
     display:inline-block;
     position:absolute;
-    left:5%;
-    margin:16px;
+    left:6%;
+    margin:17px;
 }
 .about{
     display:inline-block;
     position:absolute;
-    left:15%;
-    margin:16px;
+    left:10%;
+    margin:14px;
 }
 .slideline{
     display:inline-block;
     position:absolute;
     width:50%;
     left:25%;
+    font-size:13px;
+    color:#23384E;
+    font-family:ubuntu;
+    font-weight:800;
+    border-radius:3px;
     margin:16px;
 }
 .login{
@@ -34,11 +40,20 @@
     right:5%;
     margin:16px;
 }
+.my-cta-button{
+    background:    #ffffff;
+    border-radius: 10px;
+    padding:       4px 18px;
+    color:         #23384e;
+    display:       inline-block;
+    font:          normal bold 11px/1 "Ubuntu", sans-serif;
+    text-align:    center;
+}
 .top-2{
     margin:0;
     position:relative;
     height:100px;
-    background-color:#23384E;
+    
 
 }
 .logo{
@@ -236,16 +251,20 @@
 }
 .categories{
     background-color:#eee;
-    border-color: black;
+    
     border-width:10px;
     height:50px;
     width:100%;
     
 }
+.cat-2{
+    margin-left: 60px;
+}
 .category{
     display:inline-block;
     position:initial;
-    color:grey;
+    color:#727272;
+    font-family: 'Ubuntu', sans-serif;
     margin:15px 3% 0% 3%;
 
 }
