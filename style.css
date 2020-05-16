@@ -43,9 +43,9 @@
 }
 .logo{
     display:inline-block;
-    margin:11px;
+    margin:0;
     position:absolute; 
-    height:80px;width:100px;
+    height:110px;
     margin-left:100px;
 }
 .search{
@@ -229,6 +229,9 @@
 }
 .applink{
     display:inline-block;
+    position:absolute;
+    right:1%;
+    top:25%;
     margin:16px;
 }
 .categories{
