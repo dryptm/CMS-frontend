@@ -287,8 +287,12 @@ body{
     margin:0;
 }
 .sbs-area{
-  margin-left:55px;
-  color:#4d4d4d;
+    margin-left:55px;
+    color:#4d4d4d;
+}
+.sbs-area-heading{
+    margin-left:55px;
+    color:#4d4d4d;
 }
 .heading{
   position:relative;
@@ -302,7 +306,7 @@ body{
   left:55px;
   height:2px;
   border-radius:3px;
-  width:100px;
+  
 }
 
 .main-area{
