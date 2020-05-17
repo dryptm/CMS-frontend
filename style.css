@@ -375,11 +375,12 @@ body{
 
 .tri-add{
     height:250px;
+    top:-2px;
     width: 100%;
     position:relative;
     border:#bcbcbc;
     border-style:solid;
-    border-width:1px;
+    border-width:0;
     
 }
 .tri-add-n{
@@ -526,7 +527,69 @@ body{
     width:176px;
     font-size:18px;
 }
-
+.right-linkothers{
+    display:inline-block;
+    position:absolute;
+    right:10px;
+    margin:30px 20px 20px 20px;
+    background-color:#F7F7F7;
+    border:0;
+    border-width:0;
+    border-style:solid;
+    height:850px;
+    width:180px;
+}
+.news{
+    background-color:white;
+    border:rgb(190, 190, 190);
+    border-width:1px;
+    border-style:solid;
+    height:350px;
+    width:180px;
+}
+.news-head{
+    background-color:white;
+    text-align:center;
+    border:rgb(190, 190, 190);
+    border-width:0 0 1px 0px;
+    border-style:solid;
+    height:40px;
+    width:180px;
+}   
+.news-content{
+    background-color:white;
+    overflow: auto;
+    border-width:0px;
+    height:290px;
+    width:180px;
+    font-size:18px;
+} 
+.others{
+    background-color:white;
+    margin-top:30px;
+    border:rgb(190, 190, 190);
+    border-width:1px;
+    border-style:solid;
+    height:350px;
+    width:180px;  
+}
+.others-head{
+    background-color:white;
+    text-align:center;
+    border:rgb(190, 190, 190);
+    border-width:0 0 1px 0px;
+    border-style:solid;
+    height:40px;
+    width:180px;
+}
+.others-content{
+    background-color:white;
+    overflow: auto;
+    border-width:0px;
+    height:290px;
+    width:180px;
+    font-size:18px;
+}
 .footer{
     background-color:#164270f7 ;
     height:80px;
