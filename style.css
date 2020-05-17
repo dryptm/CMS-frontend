@@ -1,13 +1,14 @@
 body{
     margin:0;
     font-family: 'Ubuntu', sans-serif;
-    background-color:#eee;
+    background-color:#f7f7f7;
+    color:#464646;
 }
 .top-1{
     margin:0;
     position:relative;
     height:55px;
-    background-color:#174a80;
+    background-color:#174a80f7;
 }
 .home{
     display:inline-block;
@@ -275,7 +276,8 @@ body{
 }
 
 #select-cat-sbs{
-    background-color:#eee;
+    
+    position:absolute;
     border:#bebdbd;
     border-width:0 1px 0px 0px;
     display:inline-block;
@@ -306,24 +308,33 @@ body{
 .main-area{
     background-color:white;
     display:inline-block;
-    position:absolute;
+    position:relative;
     left:300px;
     margin:0;
     border:#bebdbd;
     border-width:0px 1px 0px 1px;
     border-style:solid;
-    height:100%;
+    height:1300px;
     width:800px;
 }
 .add-show-vrt{
-    background-color:white;
+    background-color:#494949c9;
+    position:absolute;
     display:inline-block;    
-    margin:20px 20px 20px 20px;
+    margin:31px 70px;
     border:#bebdbd;
     border-width:1px 1px 1px 1px;
     border-style:solid;
-    height:150px;
-    width:755px;
+    height:130px;
+    width:650px;
+}
+.main-post{
+    background-color:white;
+    position:absolute;
+    top:200px;
+    display:inline-block;    
+    margin-left:70px;
+    width:650px;
 }
 .add-show-horz{
     background-color:white;
@@ -338,3 +349,24 @@ body{
     width:180px;
 }
 
+.tri-add{
+    height:250px;
+    width: 100%;
+}
+.tri-add-n{
+    height:190px;
+    width: 200px;
+    background-color:#595959e6;
+    display: inline-block;
+    margin:25px 123px 0px 123px ;
+}
+
+
+
+
+
+.footer{
+    background-color:#174a80f7 ;
+    height:80px;
+    width: 100%;text-align:center;
+}
