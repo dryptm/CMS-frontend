@@ -2,7 +2,7 @@
     margin:0;
     position:relative;
     height:50px;
-    background-color:#23384E;
+    background-color:#174a80;
 }
 .home{
     display:inline-block;
@@ -37,8 +37,8 @@
 .subscribe{
     display:inline-block;
     position:absolute;
-    right:5%;
-    margin:16px;
+    right:4%;
+    margin:14px;
 }
 .my-cta-button{
     background:    #ffffff;
@@ -246,7 +246,7 @@
 .applink{
     display:inline-block;
     position:absolute;
-    right:1%;
+    right:4%;
     top:25%;
     margin:16px;
 }
@@ -265,10 +265,12 @@
     display:inline-block;
     position:initial;
     color:#727272;
+    font-weight:bolder;
     font-family: 'Ubuntu', sans-serif;
     margin:15px 3% 0% 3%;
 
 }
 body{
     margin:0;
+    font-family: 'Ubuntu', sans-serif;
 }
