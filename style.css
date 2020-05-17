@@ -1,3 +1,8 @@
+body{
+    margin:0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color:#eee;
+}
 .top-1{
     margin:0;
     position:relative;
@@ -53,8 +58,7 @@
     margin:0;
     position:relative;
     height:100px;
-    
-
+    background-color:white;
 }
 .logo{
     display:inline-block;
@@ -259,18 +263,45 @@
     width:100%;
 }
 .cat-2{
-    margin-left: 60px;
+    margin-left: 80px;
 }
 .category{
     display:inline-block;
     position:initial;
-    color:#727272;
     font-weight:bolder;
+    font-size:14px;
     font-family: 'Ubuntu', sans-serif;
-    margin:15px 3% 0% 3%;
+    margin:16px 20px 0% 20px;
+}
+
+#select-cat-sbs{
+    background-color:#eee;
+    border:#bebdbd;
+    border-width:0 1px 0px 0px;
+    display:inline-block;
+    border-style:solid;
+    height:1000px;
+    width:300px;
+    margin:0;
+}
+
+
+
+.main-area{
+    background-color:white;
+    display:inline-block;position:relative;
+    left:-5px;
+    margin:0;
+    border:#bebdbd;
+    border-width:0px 1px 0px 1px;
+    border-style:solid;
+    height:1000px;
+    width:800px;
+}
+.add-show-vrt{
 
 }
-body{
-    margin:0;
-    font-family: 'Ubuntu', sans-serif;
+.add-show-horz{
+    
 }
+
