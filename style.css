@@ -6,13 +6,13 @@ body{
 .top-1{
     margin:0;
     position:relative;
-    height:50px;
+    height:55px;
     background-color:#174a80;
 }
 .home{
     display:inline-block;
     position:absolute;
-    left:6%;
+    left:50px;
     margin:17px;
 }
 .about{
@@ -66,7 +66,7 @@ body{
     position:absolute;
     top:24%; 
     height:55px;
-    margin-left:100px;
+    margin-left:60px;
 }
 .search{
     display:inline-block;
@@ -263,7 +263,7 @@ body{
     width:100%;
 }
 .cat-2{
-    margin-left: 80px;
+    margin-left: 35px;
 }
 .category{
     display:inline-block;
@@ -280,28 +280,61 @@ body{
     border-width:0 1px 0px 0px;
     display:inline-block;
     border-style:solid;
-    height:1000px;
+    height:100%;
     width:300px;
     margin:0;
 }
-
-
+.sbs-area{
+  margin-left:55px;
+  color:#4d4d4d;
+}
+.heading{
+  position:relative;
+}
+.underline{
+  background-color:#004e9ed1;
+  margin:0;
+  display:inline-block;
+  position:absolute;
+  top:25px;
+  left:55px;
+  height:2px;
+  border-radius:3px;
+  width:100px;
+}
 
 .main-area{
     background-color:white;
-    display:inline-block;position:relative;
-    left:-5px;
+    display:inline-block;
+    position:absolute;
+    left:300px;
     margin:0;
     border:#bebdbd;
     border-width:0px 1px 0px 1px;
     border-style:solid;
-    height:1000px;
+    height:100%;
     width:800px;
 }
 .add-show-vrt{
-
+    background-color:white;
+    display:inline-block;    
+    margin:20px 20px 20px 20px;
+    border:#bebdbd;
+    border-width:1px 1px 1px 1px;
+    border-style:solid;
+    height:150px;
+    width:755px;
 }
 .add-show-horz{
-    
+    background-color:white;
+    display:inline-block;
+    position:absolute;
+    right:10px;
+    margin:20px 20px 20px 20px;
+    border:#bebdbd;
+    border-width:1px 1px 1px 1px;
+    border-style:solid;
+    height:750px;
+    width:180px;
 }
 
