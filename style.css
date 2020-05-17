@@ -262,6 +262,7 @@ body{
     border-style:solid;
     height:50px;
     width:100%;
+    overflow-x:auto;
 }
 .cat-2{
     margin-left: 35px;
@@ -340,12 +341,30 @@ body{
     margin-left:70px;
     width:650px;
 }
+.Ppage{
+    position: relative;
+    left:20px;
+    display: inline-block;
+}
+.Npage{
+    position: relative;
+    left:380px;
+    display: inline-block;
+}
+.hrpages{
+    background-color: #d2d2d2;
+    margin:0;
+    border:0;
+    height:1px;
+
+}
 .add-show-horz{
     background-color:white;
     display:inline-block;
     position:absolute;
     right:10px;
     margin:20px 20px 20px 20px;
+    background-color:#494949c9;
     border:#bebdbd;
     border-width:1px 1px 1px 1px;
     border-style:solid;
@@ -365,12 +384,22 @@ body{
     margin:25px 123px 0px 123px ;
 }
 
-
+/* posts.html */
+.notification-post-link{
+    position:absolute;
+    border:#bebdbd;
+    border-width:0 1px 0px 0px;
+    display:inline-block;
+    border-style:solid;
+    height:100%;
+    width:300px;
+    margin:0;
+}
 
 
 
 .footer{
-    background-color:#174a80f7 ;
+    background-color:#164270f7 ;
     height:80px;
     width: 100%;text-align:center;
 }
