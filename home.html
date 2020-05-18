@@ -33,6 +33,28 @@
         </div>
     </div>
     <div class="top-2">
+        <div id="menuicon">
+            <i class="fas fa-bars" style="color: #174a80;height: 30px;width: 30px;"></i>
+            <script>
+                var a = document.getElementById("menuicon");
+                if (window.matchMedia("(max-width: 700px)").matches) {
+                    a.style.visibility = "visible";
+                } else {
+                    a.style.visibility = "hidden";
+                }
+            </script>
+        </div>
+        <div id="searchicon">
+            <i class="fas fa-search" style="color: #174a80;height: 30px;width: 30px;"></i>
+            <script>
+                var b = document.getElementById("searchicon");
+                if (window.matchMedia("(max-width: 700px)").matches) {
+                    b.style.visibility = "visible";
+                } else {
+                    b.style.visibility = "hidden";
+                }
+            </script>
+        </div>
         <img class="logo" src="icon/cms.png" alt="">
         <div id="search">
             <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -72,7 +94,6 @@
                 if (window.matchMedia("(max-width: 700px)").matches) {
                     z.style.visibility = "hidden";
                 }
-                
             </script>
         </div>
         <div class="applink">
