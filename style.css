@@ -745,7 +745,7 @@ body {
     text-align: center;
 }
 
-@media(max-width:700px) {
+@media(max-width:770px) {
     .main-area {
         background-color: white;
         display: inline-block;
@@ -773,13 +773,14 @@ body {
     }
 
     .logo {
-        display: inline-block;
+        display: block;
         margin: 0;
-        position: absolute;
+        position: relative;
         top: 24%;
         height: 55px;
         width: 130px;
-        margin-left: 30%;
+        margin-left:auto;
+        margin-right:auto;
     }
 
     .home {
@@ -971,8 +972,8 @@ body {
     }
 
     .slider {
-        margin: 20px;
-        width: 330px;
+        margin: 6.5%;
+        width: 85%;
     }
 
     .hrabovetriaddpost {
@@ -993,27 +994,38 @@ body {
         height: 450px;
         width: 100%;
         margin: 0;
-        left:10%;
+        left:0%;
     }
-    .notification-post-link-mobile-faceup {
-        position: absolute;
-        top: 720px;
-        visibility: visible;
-        border: rgb(190, 190, 190);
-        border-width: 0;
-        display: inline-block;
-        border-style: solid;
-        height: 450px;
-        margin: 20px;
-        right:0%;
-        
+    .post{
+        position:relative;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
     }
+    .box-one{
+        position:relative;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
     .faceup-area{
-        width:200px;
+        width:80%;
+        position:relative;
+        margin:0;
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
+    }
+    .faceup-post{
+        display:block;
+        position:relative;
+        margin-left:auto;
+        margin-right:auto;
+        
     }
     .main-area-faceup {
         background-color: white;
-        display: inline-block;
+        display: block;
         position: absolute;
         top: 207px;
         overflow-y: auto;
@@ -1023,11 +1035,11 @@ body {
         border-width: 0px 1px 0px 1px;
         border-style: solid;
         height: 748px;
-        width: 374px;
+        width: 100%;
         
     }
     .hrabovetriadd-faceup {
-        margin-top: 1200px;
+        margin-top: 750px;
     }
     #sliding-search{
         display: inline-block;
@@ -1037,7 +1049,7 @@ body {
         width:80%;
         z-index: 1;
         top:10%;
-        left:100%;
+        left:-100%;
         border:#BEBEBE;
         border-width:1px;
         border-style:solid;
@@ -1048,5 +1060,18 @@ body {
         top:25%;
         width:90%;
         right:-5%;
+    }
+    .notification-post-link-mobile-bla{
+        position: relative;
+        top: 750px;
+        visibility: visible;
+        border: rgb(190, 190, 190);
+        border-width: 0;
+        display: inline-block;
+        border-style: solid;
+        height: 450px;
+        width: 100%;
+        margin: 0;
+        left:0%;
     }
 }
