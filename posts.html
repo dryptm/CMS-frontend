@@ -34,8 +34,30 @@
         </div>
     </div>
     <div class="top-2">
+        <div id="menuicon" onclick="myfunction()">
+            <i class="fas fa-bars" style="color: #1E5084;height: 30px;width: 30px;"></i>
+            <script>
+                var a = document.getElementById("menuicon");
+                if (window.matchMedia("(max-width: 700px)").matches) {
+                    a.style.visibility = "visible";
+                } else {
+                    a.style.visibility = "hidden";
+                }
+            </script>
+        </div>
+        <div id="searchicon" onclick="myslidingfunction()">
+            <i class="fas fa-search" style="color: #1E5084;height: 30px;width: 30px;"></i>
+            <script>
+                var b = document.getElementById("searchicon");
+                if (window.matchMedia("(max-width: 700px)").matches) {
+                    b.style.visibility = "visible";
+                } else {
+                    b.style.visibility = "hidden";
+                }
+            </script>
+        </div>
         <img class="logo" src="icon/cms.png" alt="">
-        <div class="search">
+        <div id="search">
             <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
                 <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-13" viewBox="0 0 40 40">
                     <path
@@ -69,6 +91,10 @@
                 document.querySelector('.searchbox [type="reset"]').addEventListener('click', function () {
                     this.parentNode.querySelector('input').focus();
                 });
+                var z = document.getElementById("search");
+                if (window.matchMedia("(max-width: 700px)").matches) {
+                    z.style.visibility = "hidden";
+                }
             </script>
         </div>
         <div class="applink">
@@ -89,7 +115,137 @@
             <div class="category"><a style="text-decoration: none;color:#727272;" href="#">CATEGORY</a></div>
         </div>
     </div>
+    <div id="sliding-search">
+        <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+            <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-13" viewBox="0 0 40 40">
+                <path
+                    d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z"
+                    fill-rule="evenodd" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+                <path
+                    d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z"
+                    fill-rule="evenodd" />
+            </symbol>
+        </svg>
 
+        <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
+            <div role="search" class="sbx-google__wrapper">
+                <input type="search" name="search" placeholder="Search your website" autocomplete="off"
+                    required="required" class="sbx-custom__input">
+                <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+                    <svg role="img" aria-label="Search">
+                        <use xlink:href="#sbx-icon-search-13"></use>
+                    </svg>
+                </button>
+                <button type="reset" title="Clear the search query." class="sbx-custom__reset">
+                    <svg role="img" aria-label="Reset">
+                        <use xlink:href="#sbx-icon-clear-3"></use>
+                    </svg>
+                </button>
+            </div>
+        </form>
+    </div>
+    <div id="sliding-menu">
+        <div class="heading">
+            <h3 class="sbs-area-heading">WEB TUTORIALS</h3>
+            <div class="underline">
+                <script>
+                    for (var i = 0; i < document.getElementsByClassName("sbs-area-heading").length; i++) {
+                        let x = document.getElementsByClassName("sbs-area-heading")[i].innerHTML.length;
+                        let y = document.getElementsByClassName("underline")[i];
+                        y.style.width = (x * 7.8) + "px";
+                    }
+                </script>
+            </div>
+        </div>
+        <a href="#" style="text-decoration: none;">
+            <h4 class="sbs-area" style="font-weight: 100;">asfasdfadf</h4>
+        </a>
+        <a href="#" style="text-decoration: none;">
+            <h4 class="sbs-area" style="font-weight: 100;">asfasdfadf</h4>
+        </a>
+        <a href="#" style="text-decoration: none;">
+            <h4 class="sbs-area" style="font-weight: 100;">asfasdfadf</h4>
+        </a>
+        <a href="#" style="text-decoration: none;">
+            <h4 class="sbs-area" style="font-weight: 100;">asfasdfadf</h4>
+        </a>
+        <a href="#" style="text-decoration: none;">
+            <h4 class="sbs-area" style="font-weight: 100;">asfasdfadf</h4>
+        </a>
+        <a href="#" style="text-decoration: none;">
+            <h4 class="sbs-area" style="font-weight: 100;">asfasdfadf</h4>
+        </a>
+        <div class="heading">
+            <h3 class="sbs-area-heading">WEB TUTORIALS BMMDJB</h3>
+            <div class="underline">
+                <script>
+                    for (var i = 0; i < document.getElementsByClassName("sbs-area-heading").length; i++) {
+                        let x = document.getElementsByClassName("sbs-area-heading")[i].innerHTML.length;
+                        let y = document.getElementsByClassName("underline")[i];
+                        y.style.width = (x * 7.8) + "px";
+                    }
+                </script>
+            </div>
+        </div>
+        <a href="#" style="text-decoration: none;">
+            <h4 class="sbs-area" style="font-weight: 100;">asfasdfadf</h4>
+        </a>
+        <a href="#" style="text-decoration: none;">
+            <h4 class="sbs-area" style="font-weight: 100;">asfasdfadf</h4>
+        </a>
+        <a href="#" style="text-decoration: none;">
+            <h4 class="sbs-area" style="font-weight: 100;">asfasdfadf</h4>
+        </a>
+        <a href="#" style="text-decoration: none;">
+            <h4 class="sbs-area" style="font-weight: 100;">asfasdfadf</h4>
+        </a>
+        <a href="#" style="text-decoration: none;">
+            <h4 class="sbs-area" style="font-weight: 100;">asfasdfadf</h4>
+        </a>
+        <a href="#" style="text-decoration: none;">
+            <h4 class="sbs-area" style="font-weight: 100;">asfasdfadf</h4>
+        </a>
+        <div class="heading">
+            <h3 class="sbs-area-heading">WEB TUTO</h3>
+            <div class="underline">
+                <script>
+                    for (var i = 0; i < document.getElementsByClassName("sbs-area-heading").length; i++) {
+                        let x = document.getElementsByClassName("sbs-area-heading")[i].innerHTML.length;
+                        let y = document.getElementsByClassName("underline")[i];
+                        y.style.width = (x * 7.8) + "px";
+                    }
+                </script>
+            </div>
+        </div>
+        <a href="#" style="text-decoration: none;">
+            <h4 class="sbs-area" style="font-weight: 100;">asfasdfadf</h4>
+        </a>
+        <a href="#" style="text-decoration: none;">
+            <h4 class="sbs-area" style="font-weight: 100;">asfasdfadf</h4>
+        </a>
+        <a href="#" style="text-decoration: none;">
+            <h4 class="sbs-area" style="font-weight: 100;">asfasdfadf</h4>
+        </a>
+        <a href="#" style="text-decoration: none;">
+            <h4 class="sbs-area" style="font-weight: 100;">asfasdfadf</h4>
+        </a>
+        <a href="#" style="text-decoration: none;">
+            <h4 class="sbs-area" style="font-weight: 100;">asfasdfadf</h4>
+        </a>
+        <a href="#" style="text-decoration: none;">
+            <h4 class="sbs-area" style="font-weight: 100;">asfasdfadf</h4>
+        </a>
+    </div>
+    <script>
+        var f = document.getElementById("sliding-menu");
+        if (window.matchMedia("(max-width: 700px)").matches) {
+            f.style.visibility = "visible";
+        } else {
+            f.style.visibility = "hidden";
+        }
+    </script>
     <div class="notification-post-link">
         <div class="box-one">
             <div class="notification-latest-head">
@@ -177,7 +333,7 @@
         </div>
     </div>
 
-    <div class="main-area">
+    <div class="main-area-posts">
         <div class="slider">
 
         </div>
@@ -449,7 +605,35 @@
 
     </div>
 
-
+    <div class="notification-post-link-mobile">
+        <div class="box-one">
+            <div class="notification-latest-head">
+                <h3>Latest Notification</h3>
+            </div>
+            <div class="notification-latest-content">
+                <ul>
+                    <li><a href="#" style="text-decoration: none;color:#1E5084">asfasdfasdfa</a></li>
+                    <li><a href="#" style="text-decoration: none;color:#1E5084">asfasdfasdfa</a></li>
+                    <li><a href="#" style="text-decoration: none;color:#1E5084">asfasdfasdfa</a></li>
+                    <li><a href="#" style="text-decoration: none;color:#1E5084">asfasdfasdfa</a></li>
+                    <li><a href="#" style="text-decoration: none;color:#1E5084">asfasdfasdfa</a></li>
+                    <li><a href="#" style="text-decoration: none;color:#1E5084">asfasdfasdfa</a></li>
+                    <li><a href="#" style="text-decoration: none;color:#1E5084">asfasdfasdfa</a></li>
+                    <li><a href="#" style="text-decoration: none;color:#1E5084">asfasdfasdfa</a></li>
+                    <li><a href="#" style="text-decoration: none;color:#1E5084">asfasdfasdfa</a></li>
+                    <li><a href="#" style="text-decoration: none;color:#1E5084">asfasdfasdfa</a></li>
+                    <li><a href="#" style="text-decoration: none;color:#1E5084">asfasdfasdfa</a></li>
+                    <li><a href="#" style="text-decoration: none;color:#1E5084">asfasdfasdfa</a></li>
+                    <li><a href="#" style="text-decoration: none;color:#1E5084">asfasdfasdfa</a></li>
+                    <li><a href="#" style="text-decoration: none;color:#1E5084">asfasdfasdfa</a></li>
+                    <li><a href="#" style="text-decoration: none;color:#1E5084">asfasdfasdfa</a></li>
+                    <li><a href="#" style="text-decoration: none;color:#1E5084">asfasdfasdfa</a></li>
+                    <li><a href="#" style="text-decoration: none;color:#1E5084">asfasdfasdfa</a></li>
+                    <li><a href="#" style="text-decoration: none;color:#1E5084">asfasdfasdfa</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <div class="right-linkothers">
         <div class="news">
@@ -512,8 +696,8 @@
         </div>
 
     </div>
-    <hr style="margin: 0; margin-top:-3px;">
-    <div class="tri-add">
+    <hr class="hrabovetriaddpost">
+    <div class="tri-add-posts">
         <div class="tri-add-n"></div>
         <div class="tri-add-n"></div>
         <div class="tri-add-n"></div>
@@ -525,6 +709,43 @@
         <h3 style="color: white;margin:0;margin-top: 30px;display: inline-block;">@copyright</h3>
     </footer>
 
+    <script>
+        var count = 0;
+        var count1=0;
+        function myfunction() {
+            console.log("clicked");
+
+
+            var m = document.getElementById("sliding-menu");
+            if (window.matchMedia("(max-width: 700px)").matches) {
+                if (count % 2 === 0) {
+                    m.style.left = "0%";
+                    count++;
+                } else {
+                    m.style.left = "-81%";
+                    count++;
+                }
+
+            }
+
+        }
+        function myslidingfunction(){
+            console.log("count clicked");
+
+
+            var r = document.getElementById("sliding-search");
+            if (window.matchMedia("(max-width: 700px)").matches) {
+                if (count1 % 2 === 0) {
+                    r.style.left = "0%";
+                    count1++;
+                } else {
+                    r.style.left = "100%";
+                    count1++;
+                }
+
+            }
+        }
+    </script>
 
 
 

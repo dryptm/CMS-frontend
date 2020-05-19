@@ -4,7 +4,16 @@ body {
     background-color: #f7f7f7;
     color: #464646;
 }
-
+#sliding-menu{
+    visibility:hidden;
+}
+#sliding-search{
+    display: inline-block;
+    position: absolute;
+    height:100px;
+    width:100%;
+    visibility: hidden;
+}
 .top-1 {
     margin: 0;
     position: relative;
@@ -305,8 +314,9 @@ body {
     border: rgb(190, 190, 190);
     border-width: 0 1px 0px 0px;
     display: inline-block;
+    overflow: auto;
     border-style: solid;
-    height: 100%;
+    height: 1000px;
     width: 300px;
     margin: 0;
 }
@@ -340,14 +350,30 @@ body {
 .main-area {
     background-color: white;
     display: inline-block;
-    position: relative;
+    position: absolute;
+    top: 207px;
     overflow-y: auto;
     left: 300px;
     margin: 0;
     border: rgb(190, 190, 190);
     border-width: 0px 1px 0px 1px;
     border-style: solid;
-    height: 1300px;
+    height: 1000px;
+    width: 800px;
+}
+
+.main-area-faceup {
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    top: 207px;
+    overflow-y: auto;
+    left: 300px;
+    margin: 0;
+    border: rgb(190, 190, 190);
+    border-width: 0px 1px 0px 1px;
+    border-style: solid;
+    height: 1248px;
     width: 800px;
 }
 
@@ -396,6 +422,7 @@ body {
     background-color: white;
     display: inline-block;
     position: absolute;
+    top: 217px;
     right: 10px;
     margin: 20px 20px 20px 20px;
     background-color: #494949c9;
@@ -406,9 +433,29 @@ body {
     width: 180px;
 }
 
+.hrabovetriadd {
+    margin-top: 166px;
+}
+
+.hrabovetriadd-faceup {
+    margin-top: 1248px;
+}
+
+.hrabovetriaddpost {
+    margin-top: 466px;
+}
+
+.tri-add-posts {
+    height: 250px;
+    width: 100%;
+    position: relative;
+    border: #bcbcbc;
+    border-style: solid;
+    border-width: 0;
+}
+
 .tri-add {
     height: 250px;
-    top: -2px;
     width: 100%;
     position: relative;
     border: #bcbcbc;
@@ -426,8 +473,24 @@ body {
 }
 
 /* posts.html */
+.main-area-posts {
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    top: 207px;
+    overflow-y: auto;
+    left: 300px;
+    margin: 0;
+    border: rgb(190, 190, 190);
+    border-width: 0px 1px 0px 1px;
+    border-style: solid;
+    height: 1300px;
+    width: 800px;
+}
+
 .notification-post-link {
     position: absolute;
+    top: 210px;
     border: rgb(190, 190, 190);
     border-width: 0 1px 0px 0px;
     display: inline-block;
@@ -578,6 +641,7 @@ body {
 .right-linkothers {
     display: inline-block;
     position: absolute;
+    top: 210px;
     right: 10px;
     margin: 30px 20px 20px 20px;
     background-color: #F7F7F7;
@@ -625,7 +689,9 @@ body {
     height: 350px;
     width: 180px;
 }
-
+.hrabovetriadd-faceup{
+   margin-top:415px;
+}
 .others-head {
     background-color: white;
     text-align: center;
@@ -668,6 +734,10 @@ body {
     margin: 34px;
 }
 
+.notification-post-link-mobile {
+    position: absolute;
+    visibility: hidden;
+}
 
 
 .footer {
@@ -683,6 +753,7 @@ body {
         display: inline-block;
         position: relative;
         overflow-y: auto;
+        top: 0px;
         left: 0;
         margin: 0;
         border: rgb(190, 190, 190);
@@ -695,8 +766,12 @@ body {
 
     .main-post {
         margin: 0;
-        left:10%;
+        left: 10%;
         width: 80%;
+    }
+
+    .hrabovetriadd {
+        margin-top: -2px;
     }
 
     .logo {
@@ -850,17 +925,130 @@ body {
         border-width: 0;
 
     }
-    #sliding-menu{
+
+    #sliding-menu {
         position: absolute;
-        top:155px;
-        background-color:#F7F7F7;
+        top: 155px;
+        background-color: #F7F7F7;
+        border: #BEBEBE;
+        border-width: 1px;
+        border-style: solid;
+        left: -81%;
+        width: 80%;
+        transition: left 1s;
+        z-index: 1;
+    }
+
+    .notification-post-link {
+        position: absolute;
+        top: 210px;
+        border: rgb(190, 190, 190);
+        border-width: 0 1px 0px 0px;
+        display: inline-block;
+        border-style: solid;
+        height: 100%;
+        width: 300px;
+        margin: 0;
+        visibility: hidden;
+    }
+
+    .right-linkothers {
+        display: inline-block;
+        position: absolute;
+        top: 210px;
+        right: 10px;
+        margin: 30px 20px 20px 20px;
+        background-color: #F7F7F7;
+        border: 0;
+        border-width: 0;
+        border-style: solid;
+        height: 850px;
+        width: 180px;
+        visibility: hidden;
+    }
+
+    .main-area-posts {
+        left: 0%;
+        width: 100%;
+    }
+
+    .slider {
+        margin: 20px;
+        width: 330px;
+    }
+
+    .hrabovetriaddpost {
+        margin-top: 1300px;
+    }
+
+    .tri-add-posts {
+        height: 500px;
+    }
+    .notification-post-link-mobile {
+        position: relative;
+        top: 1320px;
+        visibility: visible;
+        border: rgb(190, 190, 190);
+        border-width: 0;
+        display: inline-block;
+        border-style: solid;
+        height: 450px;
+        width: 100%;
+        margin: 0;
+        left:10%;
+    }
+    .notification-post-link-mobile-faceup {
+        position: absolute;
+        top: 720px;
+        visibility: visible;
+        border: rgb(190, 190, 190);
+        border-width: 0;
+        display: inline-block;
+        border-style: solid;
+        height: 450px;
+        margin: 20px;
+        right:0%;
+        
+    }
+    .faceup-area{
+        width:200px;
+    }
+    .main-area-faceup {
+        background-color: white;
+        display: inline-block;
+        position: absolute;
+        top: 207px;
+        overflow-y: auto;
+        left: 0px;
+        margin: 0;
+        border: rgb(190, 190, 190);
+        border-width: 0px 1px 0px 1px;
+        border-style: solid;
+        height: 748px;
+        width: 374px;
+        
+    }
+    .hrabovetriadd-faceup {
+        margin-top: 1200px;
+    }
+    #sliding-search{
+        display: inline-block;
+        position: absolute;
+        height:100px;
+        background-color:white;
+        width:80%;
+        z-index: 1;
+        top:10%;
+        left:100%;
         border:#BEBEBE;
         border-width:1px;
         border-style:solid;
-        left:-81%;
-        width:80%;
+        visibility: visible;
         transition:left 1s;
-        z-index:1;
     }
-
+    .searchbox{
+        top:25%;
+        width:90%;
+        right:-5%;
+    }
 }
